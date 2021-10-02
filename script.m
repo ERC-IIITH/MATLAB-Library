@@ -6,18 +6,18 @@ N = length(x1);
 %plotting the input sequence and the DFT
 t = 0:N-1;
 subplot(311)
-stem(t,x);
+stem(t,x1);
 xlabel('Time (s)');
 ylabel('Amplitude');
 title('Input sequence')
 subplot(312)
-stem(t,abs(X))
+stem(t,abs(X1))
 xlabel('Frequency');
-ylabel('|X(k)|');
+ylabel('|X1(k)|');
 title('Magnitude response')
 %plotting the phase response in frequency domain
 subplot(313)
-stem(t,angle(X))
+stem(t,angle(X1))
 xlabel('Frequency');
 ylabel('Phase');
 title('Phase response')
