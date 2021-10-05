@@ -7,6 +7,6 @@ function F = fourierCoeff(t, xt, T, t1, t2, N)
 	F = zeros(2 * N + 1, 1);
 
 	for k = 1:2*N+1
-    		F(k) = 1/T * int(xt * exp(-1i*(k-N-1)*wo*t),t,[t1 t2]);   %expression for calculating FS coeff.
+    		F(k) = 1/T * int(xt * exp(-1j*(k-N-1)*wo*t),t,[t1 t2]);   %expression for calculating FS coeff.
 	end
 end
